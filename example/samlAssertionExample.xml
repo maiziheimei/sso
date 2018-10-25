@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2:Assertion
+ xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="_83c57cb13940966107c20dd3afd13138"
+ IssueInstant="2018-10-16T13:21:02.302Z" Version="2.0">
+ <saml2:Issuer>piipe</saml2:Issuer>
+ <saml2:Subject>
+   <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+     NameQualifier="Name qualifier" SPNameQualifier="SP name qualifier">Some NameID value</saml2:NameID>
+   <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+     <saml2:SubjectConfirmationData
+       InResponseTo="Made up ID"
+       NotBefore="2018-10-14T13:21:02.306Z"
+       NotOnOrAfter="2018-10-18T13:21:02.307Z"
+       Recipient="http://ai-aid.edtec.berlin/sso/sp/consumer"/>
+   </saml2:SubjectConfirmation>
+ </saml2:Subject>
+ <saml2:Conditions NotBefore="2018-10-14T13:21:02.308Z" NotOnOrAfter="2018-10-18T13:21:02.308Z">
+   <saml2:AudienceRestriction>
+     <saml2:Audience>http://ai-aid.edtec.berlin/sso/sp/consumer</saml2:Audience>
+   </saml2:AudienceRestriction>
+ </saml2:Conditions>
+ <saml2:AttributeStatement>
+   <saml2:Attribute Name="username">
+     <saml2:AttributeValue
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">Anton Busch
+     </saml2:AttributeValue>
+   </saml2:Attribute>
+   <saml2:Attribute Name="email">
+     <saml2:AttributeValue
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">Anton.Busch@airbus.com
+     </saml2:AttributeValue>
+   </saml2:Attribute>
+ </saml2:AttributeStatement>
+ <saml2:AuthnStatement AuthnInstant="2018-10-16T13:21:02.315Z">
+   <saml2:AuthnContext>
+     <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Smartcard</saml2:AuthnContextClassRef>
+   </saml2:AuthnContext>
+ </saml2:AuthnStatement>
+</saml2:Assertion>

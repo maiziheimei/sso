@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:AuthnRequest
+	xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+AssertionConsumerServiceURL="http://ai-aid.edtec.berlin/sso/sp/consumer"
+Destination="http://eit.piipe.de/idp/sso/"
+ID="_50f066007fb7b4778eacfa0854cf2580" IssueInstant="2018-10-24T14:15:46.748Z"
+ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Version="2.0">
+	<saml2:Issuer
+		xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">adwisar
+	</saml2:Issuer>
+	<saml2p:NameIDPolicy AllowCreate="true" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/>
+	<saml2p:RequestedAuthnContext Comparison="minimum">
+		<saml2:AuthnContextClassRef
+			xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">urn:oasis:names:tc:SAML:2.0:ac:classes:Password
+		</saml2:AuthnContextClassRef>
+	</saml2p:RequestedAuthnContext>
+</saml2p:AuthnRequest>
